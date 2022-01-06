@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Header = () => {
   return (
     <header>
@@ -7,9 +9,12 @@ const Header = () => {
 };
 
 const Header1 = (pars) => {
+  const onClick = () => console.log("click");
+
   return (
     <header>
       <h2>COMPONENT: Header1 - title: {pars.title}</h2>
+      <Button text="clickMe" onClick={onClick} />
     </header>
   );
 };
